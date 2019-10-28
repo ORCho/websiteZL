@@ -1,0 +1,52 @@
+.navbar-brand {
+    padding: 0px;
+  }
+.navbar-brand>img {
+    height: 70px;
+    padding: 15px;
+    width: auto;
+  }
+
+.masthead {
+    height: 700px;
+    min-height: 500px;
+    background-image: url('../img/header.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    text-align: center;
+  }
+
+.nav-link{
+    font-size: 3 rem;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+h1{
+    font-size: 5 rem;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: bold
+}
+
+p{
+    font-size: 4 rem;
+    font-family: 'Noto Sans SC', sans-serif;
+
+}
+
+
+.jumbotron-fluid {
+    display: flex;
+    align-items: center;
+}
+
+
+.carousel-item>img{
+    height: 700px;
+    width: auto;
+} 
