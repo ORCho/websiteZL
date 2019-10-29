@@ -88,12 +88,12 @@ p{
 
 .headerh1 {
   color:white;
-  font-size:68px;
+  font-size:3rem;
 }
 
 .headerh2 {
   color:white;
-  font-size:32px;
+  font-size:1.78rem;
   margin-top:30px;
 
 }
@@ -107,12 +107,12 @@ p{
 
 .visionh2{
   margin-bottom: 50px;
-  font-size: 28px;
+  font-size: 1.78rem;
 }
 
 .visionh3{
   margin-top:80px;
-  font-size:36px;
+  font-size:2rem;
 }
 
 
@@ -140,6 +140,3 @@ p{
     width: auto;
 } 
 
-.imgwrapper {
-  width: 50%;
-}
