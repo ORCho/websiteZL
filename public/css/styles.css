@@ -26,7 +26,7 @@ p{
   font-size:16px;
 }
 
-:hover.green-button{
+.green-button:hover{
   opacity: 0.7;
   background-color: #4EB4A8;
   color:white;
@@ -34,6 +34,24 @@ p{
 
 }
 
+.white-button{
+  background-color: white;
+  color:#4EB4A8;
+  border: none;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 300px;
+  font-size:16px;
+}
+
+.white-button:hover{
+  opacity: 0.7;
+  background-color: white;
+  color:#4EB4A8;
+  border: none;
+
+}
 
 .padding {
   margin-top: 250px;
@@ -66,7 +84,7 @@ p{
   color:white;
 }
 
-:hover .navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link:hover{
   color: black;
 }
 
@@ -106,6 +124,7 @@ p{
   padding-top:30%;
   padding-bottom: 5%;
   font-size: 1.78rem;
+  
 }
 
 .visionh3{
@@ -115,15 +134,19 @@ p{
 
 /* tech */
 
-.techimg{
-  width:50px;
-  height:50px;
+.tech{
+background-color: #4EB4A8;
+padding:5%
 }
 
-.paddingtech{
-  padding:1% 5%;
-  max-width: 1200px;
+.techh2{
+padding:5%;
 }
+
+.centertech{
+  color:white;
+}
+
 
 
 
@@ -134,14 +157,24 @@ p{
 
 
 .carousel-item>img{
-    height: 700px;
-    width: auto;
+    height: 350px;
+    width: 500px;
+    padding:4% 3%;
+
 } 
 
-#slides2 .carousel-item>img{
-    height: 300px;
-    width: auto;
+#slides .carousel-item>img{
+    height: 700px;
+    width: 100%;
+    padding-bottom: 0px;
+
+
 } 
+
+.carousel-caption{
+  top: 200px;
+}
+
 
 /* customer */
 
@@ -151,13 +184,20 @@ p{
   padding-top:15%;
   padding-bottom: 0;
 }
-
 .customerpadding{
-  padding:10%;
+  padding:1% 15%;
 }
+
+.imgpadding{
+  padding:0% 0%;
+}
+
 
 .proimg{
   filter: opacity(50%);
+  width:80%;
+  margin:20px 20px;
+  max-width:200px;
  }
 .proimg:hover{
   filter: opacity(100%);
@@ -165,4 +205,8 @@ p{
 
 .cuspadding{
   padding:1% 5%;
+}
+
+.cuscenter{
+  text-align: center;
 }
