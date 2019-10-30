@@ -101,25 +101,28 @@ p{
 
 /* vision */
 
-.btn-group-lg>.btn, .btn-lg{
- margin-top: 100px;
-}
 
 .visionh2{
-  margin-bottom: 50px;
+  padding-top:30%;
+  padding-bottom: 5%;
   font-size: 1.78rem;
 }
 
 .visionh3{
-  margin-top:80px;
   font-size:2rem;
 }
 
 
-.paddingtech{
-  padding-left:150px;
-  padding-right:150px;
+/* tech */
 
+.techimg{
+  width:50px;
+  height:50px;
+}
+
+.paddingtech{
+  padding:1% 5%;
+  max-width: 1200px;
 }
 
 
@@ -140,3 +143,26 @@ p{
     width: auto;
 } 
 
+/* customer */
+
+.customer{
+  padding-left:5%;
+  padding-right:5%;
+  padding-top:15%;
+  padding-bottom: 0;
+}
+
+.customerpadding{
+  padding:10%;
+}
+
+.proimg{
+  filter: opacity(50%);
+ }
+.proimg:hover{
+  filter: opacity(100%);
+}
+
+.cuspadding{
+  padding:1% 5%;
+}
