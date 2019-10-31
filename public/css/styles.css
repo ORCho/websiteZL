@@ -154,7 +154,11 @@ border: none;
     {
         background-color:rgba(0,0,0,0.5);
         text-align: center;
-    }}
+    }
+.nav-item{
+  padding: 20px;
+}  
+  }
 
 /* headercover */
 
