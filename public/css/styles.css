@@ -86,15 +86,15 @@ p{
 
 #nav ul li a {
   color:#262626;
-  padding;:8px 20px;
+  padding:20px 20px;
   text-decoration:none;
   text-transform: uppercase;
   transition: 1s;
 }
 
 #nav.black ul li a{
-  color:#fff;
-    padding:5px 24px;
+    color:#fff;
+    padding:20px 24px;
     text-decoration:none;
     text-transform: uppercase;
     transition: 1s;
@@ -155,9 +155,7 @@ border: none;
         background-color:rgba(0,0,0,0.5);
         text-align: center;
     }
-.nav-item{
-  padding: 20px;
-}  
+ 
   }
 
 /* headercover */
