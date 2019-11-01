@@ -70,12 +70,15 @@ a.nav-link{
   border-radius: 5px;
 }
 
+.nav-link{
+color:white !important;
+}
+
 #nav ul{
   display:flex;
 }
 
 #nav ul li a {
-  color:#262626;
   text-transform: uppercase;
   transition: 0.5s;
 }
@@ -140,6 +143,21 @@ background-color: #f00;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
+.mastheadpd {
+  background-image: url('../img/pdc1.png');
+}
+
+.mastheadab {
+  background-image: url('../img/ab1.png');
+}
+
+.mastheadct {
+  background-image: url('../img/ct1.png');
+}
+
+
 
 
 .headerh1 {
@@ -306,4 +324,8 @@ color:gray;
 
 #logoft{
   margin-top:60px;
+}
+
+.bg-secondary{
+background-color: rgba(0, 0, 0, 0.6)!important;
 }
