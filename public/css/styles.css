@@ -230,17 +230,42 @@ padding:5%;
 }  */
 
 
-/* product */
-#slides .carousel-item>img{
+/* #slides .carousel-item>img{
     width: 100%;
     padding-bottom: 0px;
     height: 100%; 
     object-fit: contain;
 
-} 
+}  */
+
+
+/* product */
+
+.imgcenter{
+  display: inline-block;
+}
+
+.product a button{
+  margin-bottom:5%;
+}
+
+#carouselExampleIndicators {
+  margin: auto;
+}
+
+
+#carouselExampleIndicators .carousel-inner .carousel-item img {
+  height: 500px!important;
+  width: 100% !important;
+  min-width:100%!important;
+  object-fit: cover;
+  
+}
+
+
 
 .carousel-caption{
-  top: 200px;
+  top: 150px;
 }
 
 
