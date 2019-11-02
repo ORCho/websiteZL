@@ -192,7 +192,7 @@ background-color: #f00;
 
 .tech{
 background-color: #4EB4A8;
-padding:5%
+padding:6%;
 }
 
 .techh2{
@@ -203,25 +203,34 @@ padding:5%;
   color:white;
 }
 
-
-
-
 .jumbotron-fluid {
     display: flex;
     align-items: center;
 }
+#carouselExampleFade1{
+  max-width: 400px;
+  min-width:300px;
+  margin: auto;
 
+}
 
-.carousel-item>img{
+#carouselExampleFade1 .carousel-inner .carousel-item img {
+  height: 300px!important;
+  width: 100% !important;
+  min-width:100%!important;
+  object-fit: cover;
+}
+
+/* .carousel-item>img{
     height: 100%;
     width: 100%;
     padding:4% 3%;
     object-fit: contain;
     min-height: 400px;
+}  */
 
 
-} 
-
+/* product */
 #slides .carousel-item>img{
     width: 100%;
     padding-bottom: 0px;
