@@ -21,16 +21,16 @@
       
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link" href="/">主页 <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/product">产品</a>
+                <a class="nav-link" href="/product">产品中心</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/about">关于纵凌</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="/contact">联系我们</a>
               </li>
               <div class="lang hidden-xs">
@@ -62,15 +62,57 @@
           </header>
         </section>
       
-      
-        
-      
-      
+      <!-- about us -->    
+      <div class=" container-fluid productdiv  h-100">
+          <div class="row paddingpd">
+              <div class="product1 align-self-center text-left col-md-6">
+              <h2>总部</h2>
+                <p>中国
+                  上海市嘉定区<br>
+                  城北路1585号11号楼
+                </p>
+                <p class="" style="white-space:pre-wrap;">联系电话   +86 021 33882917 </p>
+                <h2 style="white-space:pre-wrap;">邮箱</h2>
+                <p class="" style="white-space:pre-wrap;">售前咨询<br><a href="mailto:template.placeholder@gmail.com" target="_blank">information@Zlink.com</a></p>
+                <p class="" style="white-space:pre-wrap;">合作接洽<br><a href="mailto:template.placeholder@gmail.com" target="_blank">contact@Zlink.com</a></p>
+              </div>
+              <div class="product1 align-self-center col-md-6">
+                  <div id="map"></div>
 
+              </div>
+              </div>
+              
+          
+          </div>
     
-  
+          <style>
+              #map {
+                width: 100%;
+                height: 400px;
+                background-color: grey;
+              }
+            </style>
    
-   
+          <script>
+              // Initialize and add the map
+              function initMap() {
+                // The location of Uluru
+                var uluru = {lat: -25.344, lng: 131.036};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 4, center: uluru});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: uluru, map: map});
+              }
+                  </script>
+                  <!--Load the API from the specified URL
+                  * The async attribute allows the browser to render the page while the API loads
+                  * The key parameter will contain your own API key (which is not needed for this tutorial)
+                  * The callback parameter executes the initMap() function
+                  -->
+                  <script async defer
+                  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                  </script>
 
 
 
