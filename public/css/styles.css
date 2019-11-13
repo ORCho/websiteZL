@@ -424,7 +424,7 @@ to {
 
 img.optionalstuff1{
   max-width: 100%;
-  max-height: 100%;
+  max-height: 400px;
   overflow:auto;
 }
 
@@ -441,8 +441,15 @@ padding: 5% 5%;
     display: none;
   }
 }
+
 @media (max-width:768px) {
   img.optionalstuff {
     display: none;
   }
+.productdiv{
+  padding:8vh 0;
+}
+.paddingpd{
+  margin:3vh 0;
+}
 }

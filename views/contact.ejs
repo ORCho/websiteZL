@@ -66,15 +66,17 @@
       <div class=" container-fluid productdiv  h-100">
           <div class="row paddingpd">
               <div class="product1 align-self-center text-left col-md-6">
-              <h2>总部</h2>
-                <p>中国
+              <p>总部</p>
+                <p class="lead">
+                  中国
+                  <br>
                   上海市嘉定区<br>
                   城北路1585号11号楼
                 </p>
-                <p class="" style="white-space:pre-wrap;">联系电话   +86 021 33882917 </p>
-                <h2 style="white-space:pre-wrap;">邮箱</h2>
-                <p class="" style="white-space:pre-wrap;">售前咨询<br><a href="mailto:template.placeholder@gmail.com" target="_blank">information@Zlink.com</a></p>
-                <p class="" style="white-space:pre-wrap;">合作接洽<br><a href="mailto:template.placeholder@gmail.com" target="_blank">contact@Zlink.com</a></p>
+                <p class="lead" style="white-space:pre-wrap;">联系电话   +86 021 33882917 </p>
+                <p class="">邮箱</p>
+                <p class="lead">售前咨询<br><a style="color: #4EB4A8;" href="mailto:template.placeholder@gmail.com" target="_blank">information@Zlink.com</a></p>
+                <p class="lead">合作接洽<br><a style="color: #4EB4A8;" href="mailto:template.placeholder@gmail.com" target="_blank">contact@Zlink.com</a></p>
               </div>
               <div class="product1 align-self-center col-md-6">
                   <div id="map"></div>
@@ -88,22 +90,74 @@
           <style>
               #map {
                 width: 100%;
-                height: 400px;
+                height: 500px;
                 background-color: grey;
+                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
               }
             </style>
    
+
+
           <script>
               // Initialize and add the map
-              function initMap() {
+              var marker;
+     function initMap() {
                 // The location of Uluru
-                var uluru = {lat: -25.344, lng: 131.036};
+                var uluru = {lat: 31.29, lng: 121.31};
                 // The map, centered at Uluru
                 var map = new google.maps.Map(
-                    document.getElementById('map'), {zoom: 4, center: uluru});
+                    document.getElementById('map'), {
+                      zoom: 10, 
+                      gestureHandling: 'greedy',
+                      center: uluru,
+                      zoomControl: false,
+                      disableDefaultUI: true,
+                    });
                 // The marker, positioned at Uluru
-                var marker = new google.maps.Marker({position: uluru, map: map});
+        marker = new google.maps.Marker({
+                  position: {lat:31.417,lng:121.214}, 
+                map: map,
+                animation: google.maps.Animation.DROP,
+                });
+
+
+         marker.addListener('mouseover', toggleBounce);
+        
+        
+        
+        var contentstring="<p style='font-size:1rem' class='text-left'>Zlink AI  纵凌科技  <br> 上海市嘉定区城北路1585号11号楼</p></a>"
+        
+        
+        var infoWindow=new google.maps.InfoWindow({
+                  content:contentstring,
+                  pixelOffset: new google.maps.Size(0,-10)
+                });
+                
+        marker.addListener('mouseover', function(){
+                  infoWindow.open(map,marker);
+                  setTimeout(function () { infoWindow.close(); }, 5000);
+                });
+          
+
+        marker.addListener('click', function() {
+              map.setZoom(16);
+                map.setCenter(marker.getPosition());
+                 });
+
+  google.maps.event.addListener(marker, 'click', function() {window.open('https://www.google.com/maps/place/Cheng+Bei+Lu,+Jiading+Qu,+Shanghai+Shi,+China/@31.4172991,121.2137399,19z/data=!3m1!4b1!4m5!3m4!1s0x35b240f618473dff:0x1e9a5d1568969c28!8m2!3d31.4172991!4d121.2142871')});
+
               }
+
+
+  function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+    setTimeout(function(){ marker.setAnimation(null); }, 750);
+  }
+}
                   </script>
                   <!--Load the API from the specified URL
                   * The async attribute allows the browser to render the page while the API loads
@@ -111,7 +165,7 @@
                   * The callback parameter executes the initMap() function
                   -->
                   <script async defer
-                  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg7_vMWfPfT1NBnUYZEVtxaQIxqFvFVog&callback=initMap">
                   </script>
 
 
